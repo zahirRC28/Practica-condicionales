@@ -1,7 +1,9 @@
 /*Ejercicio 1: Verificar si un número es positivo, negativo o cero
 Escribe una función llamada verificarNumero que reciba un número como argumento 
 y devuelva si el número es positivo, negativo, o cero.*/
-let num = 5;
+
+//no es recomendable hacer let num = 5;
+
 function verificarNumero(num){
     if(num > 0){
         return "El número es positivo";
@@ -11,13 +13,14 @@ function verificarNumero(num){
         return "El número es cero";
     }
 };
-console.log(verificarNumero(num));
-
+console.log(verificarNumero(5));
+console.log(verificarNumero(-44));
 /* Ejercicio 2: Edad legal para votar
 Escribe una función llamada puedeVotar que reciba la edad de una persona 
 y devuelva si una persona tiene 18 años o más y devuelva "Puede votar" 
 o "No puede votar".*/
-let edad = 20;
+
+//no es recomendable hacerlet edad = 20;
 function puedeVotar(edad){
     if(edad >= 18){
         return "Puede votar";
@@ -25,13 +28,14 @@ function puedeVotar(edad){
         return "No puede votar";
     }
 };
-console.log(puedeVotar(edad));
+console.log(puedeVotar(20));
+console.log(puedeVotar(10));
 
 /*Ejercicio 3: Mayor de dos números 
 Escribe una función llamada mayorDeDos que reciba dos números y
 devuelva el mayor de los dos. Si son iguales, devuelve un mensaje indicando que son iguales.*/
-let num1 = 1;
-let num2 = 2;
+//no es recomendable hacer let num1 = 1;
+//no es recomendable hacer let num2 = 2;
 function mayorDeDos(num1 , num2){
     if(num1 == num2){
         return "los numeros son iguales";
@@ -41,21 +45,23 @@ function mayorDeDos(num1 , num2){
         return num2 + " es mayor que " + num1;
     }
 };
-console.log(mayorDeDos(num1,num2));
+console.log(mayorDeDos(1,2));
+console.log(mayorDeDos(5,3));
 
 
 /*Ejercicio 4: Determinar si un número es divisible por 5
 Escribe una función llamada esDivisiblePorCinco que reciba un número y
  devuelva true si el número es divisible por 5 o false si no lo es.*/
 
- let nume = 20;
+ //no es recomendable hacer let nume = 20;
  function esDivisiblePorCinco(nume){
     if(nume%5 === 0){
         return true;
     }else
         return false;
  };
- console.log(esDivisiblePorCinco(nume));
+ console.log(esDivisiblePorCinco(20));
+  console.log(esDivisiblePorCinco(12));
 
 /*Ejercicio 5: Clasificar nota de examen
 
@@ -66,7 +72,7 @@ Nota >= 70 y < 90: "Buena"
 Nota >= 50 y < 70: "Regular"
 Nota < 50: "Insuficiente" */
 
-let nota = 10;
+//no es recomendable hacer let nota = 10;
 function clasificarNota(nota){
     if(nota < 50){
         return "Insuficiente";
@@ -78,4 +84,7 @@ function clasificarNota(nota){
         return "Excelente"
     }
 };
-console.log(clasificarNota(nota));
+console.log(clasificarNota(10));
+console.log(clasificarNota(52));
+console.log(clasificarNota(78));
+console.log(clasificarNota(93));
